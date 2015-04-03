@@ -1,11 +1,9 @@
 <?php
 /*
-Plugin Name: Custom Editor Styles
-Plugin URI: http://alisothegeek.com/2011/05/tinymce-styles-dropdown-wordpress-visual-editor/
-Description: Make a custom styles dropdown menu for the visual editor in WordPress.
-Author: Alison Barrett
-Version: 1.1
-Author URI: http://alisothegeek.com/
+Plugin Name: Speciale Opmaak Stijl
+Description: Maak het mogelijk voor schrijvers om speciale opmaak te kiezen.
+Author: Alison Barrett, Dennis Neumann
+Version: 1.0
 
 Copyright 2012 Alison Barrett (email: alison@brts.us)
 
@@ -23,12 +21,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-/**
- * Custom Editor Styles main plugin class
- *
- * @author Neville Longbottom <nlongbottom@gryffindor.hogwarts.edu>
- * @author Alison Barrett <alison@brts.us>
- */
+
 class Custom_Editor_Styles {
 
 	/**
@@ -67,18 +60,12 @@ class Custom_Editor_Styles {
 	public function tiny_mce_before_init( $settings ) {
 		$style_formats = array(
 			array(
-				'title'    => 'Button',
-				'selector' => 'a',
-				'classes'  => 'button'
+				'title'    => 'Geen Inspring',
+				'selector' => 'p',
+				'classes'  => 'min-inspring'
 			),
 			array(
-				'title'   => 'Callout Box',
-				'block'   => 'div',
-				'classes' => 'callout',
-				'wrapper' => true
-			),
-			array(
-				'title'  => 'Bold Red Text',
+				'title'  => 'Dikke Rode Tekst',
 				'inline' => 'span',
 				'styles' => array(
 					'color'      => '#f00',
